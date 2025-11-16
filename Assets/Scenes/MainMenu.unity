@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 163845073}
   - component: {fileID: 163845072}
   - component: {fileID: 163845071}
+  - component: {fileID: 163845075}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -452,6 +453,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &163845075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163845070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ba723083cec524f807caccabe64214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NewGameScene: Level
 --- !u!1 &185847987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,7 +1405,6 @@ GameObject:
   - component: {fileID: 880742680}
   - component: {fileID: 880742679}
   - component: {fileID: 880742678}
-  - component: {fileID: 880742681}
   - component: {fileID: 880742683}
   m_Layer: 0
   m_Name: Main Camera
@@ -1474,19 +1487,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &880742681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880742677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dad3c6b99483a4942ba2ab55007ab4de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fps: 60
 --- !u!114 &880742683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1579,7 +1579,6 @@ GameObject:
   - component: {fileID: 918927625}
   - component: {fileID: 918927624}
   - component: {fileID: 918927623}
-  - component: {fileID: 918927626}
   - component: {fileID: 918927627}
   m_Layer: 5
   m_Name: NewGame
@@ -1652,7 +1651,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 918927626}
+      - m_Target: {fileID: 163845075}
         m_TargetAssemblyTypeName: NewGame, Assembly-CSharp
         m_MethodName: NewGameStart
         m_Mode: 1
@@ -1714,18 +1713,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918927621}
   m_CullTransparentMesh: 1
---- !u!114 &918927626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918927621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6ba723083cec524f807caccabe64214, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &918927627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2814,7 +2801,6 @@ GameObject:
   - component: {fileID: 1437056612}
   - component: {fileID: 1437056611}
   - component: {fileID: 1437056610}
-  - component: {fileID: 1437056613}
   m_Layer: 0
   m_Name: MainMenuBGAudio (broAudio)
   m_TagString: Untagged
@@ -2864,7 +2850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _onlyPlayOnce: 0
   _playOnEnable: 1
-  _stopOnDisable: 0
+  _stopOnDisable: 1
   _overrideFadeOut: -1
   _sound:
     ID: 268435458
@@ -2888,18 +2874,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1437056613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1437056609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 615b193669efc0c4eb936dc084d386f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1442313195
 GameObject:
   m_ObjectHideFlags: 0

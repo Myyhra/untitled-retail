@@ -1,10 +1,12 @@
+using CoreScripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class NewGame : MonoBehaviour
 {
+    public string NewGameScene;
     public void NewGameStart()
     {
-        SceneManager.LoadScene("Level");
+        GameSceneManager.Instance.LoadScene(NewGameScene);
     }
 }
